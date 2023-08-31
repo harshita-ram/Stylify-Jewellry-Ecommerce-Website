@@ -1,0 +1,112 @@
+*{
+    margin: 10px;
+    
+}
+
+
+
+.container-header{
+    background-color: #b7b5b3;
+    height: 100px;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding-left: 25px; /* Add left padding to avoid content sticking to the left edge */
+    padding-right: 25px; /* Add right padding to avoid content sticking to the right edge */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add space between logo and nav items */
+    padding: 20px;
+
+}
+
+
+img[src="images/aboutlogo.png"] {
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    left: 185px; /* Adjust the left position as needed */
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+        position: absolute;
+        top: 40px; /* Adjust the top position as needed */
+        left: 300px; /* Adjust the right position as needed */
+    }
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #090808;
+}
+
+
+/*trending collection  */
+.container-products{
+    background-color:#e2dde2;
+}
+.center-text h2{
+    color:#111;
+    font-size:28px;
+    text-transform:capitalize;
+    text-align:center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap:2rem;
+}
+
+.row{
+    position:relative;
+    transition:all .40s;
+}
+
+.row img{
+    width:100%;
+    height:auto;
+    transition:all .40s;
+}
+
+.row img:hover{
+    transform:scale(0.9);
+}
+
+.product-text h5{
+    position:absolute;
+    top:13px;
+    left:13px;
+    color:#fff;
+    font-size:12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon{
+    position:absolute;
+    right:0;
+    font-size:20px;
+}

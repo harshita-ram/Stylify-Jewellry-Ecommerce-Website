@@ -1,0 +1,297 @@
+/* Your existing CSS styles here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrollbar caused by full-width elements */
+}
+
+.header {
+    background-image: url("images/bgh.png");  /*Path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: #0d0b0b;
+    height: 100vh; /* Set the height of the header to cover the entire viewport */
+    position: relative; /* Add position relative to create a new positioning context */
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding-left: 25px; /* Add left padding to avoid content sticking to the left edge */
+    padding-right: 25px; /* Add right padding to avoid content sticking to the right edge */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add space between logo and nav items */
+    padding: 20px;
+
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+        position: absolute;
+        top: 80px; /* Adjust the top position as needed */
+        left: 240px; /* Adjust the right position as needed */
+    }
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #090808;
+}
+
+.p {
+    color: #090808;
+
+  }
+
+  .row {
+    display: flex;
+    align-items: center; /* Align the slides vertically in the container */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px; /* Adjust the margin as needed */
+}
+
+
+.col-2 {
+    flex-basis: 50%;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #f9f4f4;
+    color: #110e0e;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+/* Positioning the text on the image */
+.col-2 {
+    position: absolute;
+    top: 50%;
+    left: 35px; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+}
+img[src="images/logo.png"] {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 25px; /* Adjust the left position as needed */
+}
+ /* img[src="images/cart.png"] { 
+     position: absolute; 
+      top: 20px; 
+     right: 5px;  
+  } */
+  .btn:hover{
+    background: #e4b928;
+  }
+  .categories{
+    margin:70px 0;
+  }
+  .col-3 .Category1{
+    position: relative;
+  }
+  .col-3{
+    flex-basis: 20%;
+    min-width: 200px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    
+  
+  .col-3 img{
+    width:100%;
+    transition: transform 0.3s ease;
+  }
+  .col-3::before,
+  .col-3::after{
+ content: "";
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background-size: cover;
+background-position: center;
+opacity: 0;
+pointer-events: none;
+transition:opacity 0.3s ease;
+  }
+  .col-3:hover::before,
+.col-3:hover::after {
+  opacity: 1; /* Show the overlay on hover */
+}
+.Category1::before {
+    background-image: url("images/img1.png"); /* Path to the new image */
+  }
+  .Category2::before {
+    background-image: url("images/img2.png"); /* Path to the new image */
+  }
+  .Category3::before {
+    background-image: url("images/img3.png"); /* Path to the new image */
+  }
+  .Category4::before {
+    background-image: url("images/img4.png"); /* Path to the new image */
+  }
+  
+  .small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .overlay{
+    position: absolute;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background */
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  opacity: 0;
+  transition: height 0.3s ease,opacity 0.3s ease;
+  }
+  .col-3:hover .overlay {
+    height:50%;
+    opacity: 1;
+  }
+  .btn2 {
+    padding: 10px 2px;
+    width:100%;
+    background-color: #FFFFFFBF;
+    color: #090707;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateY(100%);
+    transition:transform 0.3s ease ;
+  }
+  .col-3:hover .btn2 {
+    transform: translateY(0); /* Slide the button upwards on hover */
+  }
+  .categories h1 {
+    text-align: center; /* Center the text */
+    position: relative; /* Add position relative to create a new positioning context */
+  }
+  
+  .categories h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust the position of the underline as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; /* Set the width of the underline */
+    height: 2px; /* Set the height/thickness of the underline */
+    background-color: red; /* Set the underline color */
+  }
+  .text-container {
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column; /* Set flex-direction to column */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1.3s ease;
+    margin-top:auto;
+  }
+  .col-3:hover .text-container {
+    opacity: 1;
+  }
+.footer{
+ background:#3d3e3d;
+ color:#8a8a8a;
+ font-size:14px;
+ padding:60px 0 20px;
+}
+.footer p{
+  color:#d0e2d4;
+}
+.footer h3{
+  color:#fff;
+  margin-bottom:20px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+  min-width:250px;
+  margin-bottom:20px;
+}
+.footer-col-1{
+  flex-basis:30%;
+}
+.footer-col-2{
+  flex:1;
+  text-align:center;
+}
+.footer-col-2 img{
+  width:180px;
+  margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+  flex-basis:12%;
+  text-align:center;
+}
+ul{
+  list-style-type: none;
+}
+.app-logo{
+ margin-top: 20px; 
+}
+.app-logo img{
+  width:140px;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.header-logo {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+

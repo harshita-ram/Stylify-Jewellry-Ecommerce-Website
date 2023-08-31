@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding:0;
+}
+
+.container-header {
+    background-color: #F8F4F0;
+    height: 100px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+img[src="images/Jewellery_Logo.png"] {
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    top: 10px;
+    left: 185px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+    top: 40px;
+    left: 300px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #090808;
+}
+/*trending collection  */
+.container-products{
+    background-color:#e2dde2;
+}
+.center-text h2{
+    color:#111;
+    font-size:28px;
+    text-transform:capitalize;
+    text-align:center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+    gap:2rem;
+}
+
+.row{
+    position:relative;
+    transition:all .40s;
+}
+
+.row img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform:scale(0.9);
+}
+
+.product-test h5{
+    position:absolute;
+    top:13px;
+    left:13px;
+    color:#fff;
+    font-size:12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon{
+    position:absolute;
+    right:0;
+    font-size:20px;
+}
+/*-----single product details-------*/
+.single-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 20px;
+    flex-direction: column;
+}
+.single-product h2{
+    text-align: center;
+}
+.single-product  img{
+    /* padding:0; */
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the image */
+    height: auto;
+    margin-right: 20px;
+    float:left;
+    /* padding-right: 20px; Add padding to the right of the image */
+    transition: transform 0.4s ease-in-out,filter 0.4s ease-in-out !important;
+}
+.single-product .col-2{
+    padding:20px 20px 20px 0; 
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.single-product h4{
+   margin:20px 0;
+   font-size:22px;
+   font-weight:bold; 
+}
+.single-product input{
+    width:50px;
+    height:40px;
+    padding-left:10px;
+    font-size:20px;
+    margin-right:10px;
+    border:1px solid #ff523b;
+    outline: none;
+}
+input:focus{
+ outline:none;   
+}
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.product-details {
+    flex: 1; /* Allow the container to take available space */
+    padding-right: 20px; /* Add spacing between image and details */
+}
+.product-description {
+    flex: 1; /* Allow the container to take available space */
+    text-align: left;
+}
+.single-product .img:hover {
+    transform: scale(1.1);
+    filter: brightness(1); /* Add a brightness effect on hover */
+}
+.small-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.single-product .product-description {
+    text-align: left;
+    margin-top: 20px;
+}
+.trending-product {
+    padding: 50px;
+}
+.center-text h2 {
+    font-size: 24px;
+    color: #111;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+.row {
+    position: relative;
+    transition: all 0.40s;
+}
+.row img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.40s;
+}
+.row img:hover {
+    transform: scale(0.9);
+}
+.single-product p{
+    margin: 10px 0; /* Add some margin to the paragraph */
+    font-weight: bold;  
+}
